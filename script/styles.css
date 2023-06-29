@@ -5,6 +5,18 @@
     background-size:cover;
     position:relative;
 }
+
+/* hero background image */
+.bgimage-section2 {
+    height:100vh;
+    background: rgb(71, 71, 71);
+    background-size:cover;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
@@ -19,6 +31,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.hero-text-section2 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
 }
 
 /* about section image css */
@@ -83,19 +104,35 @@ body {
 
 /* skill icon styling */
 .skills {
-    max-width: auto;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
-
-.skill-header {
-margin-bottom: 1rem;
+  
+.first-set,
+.second-set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+  
+.icon-card {
+margin: 0 0.5rem;
 }
 
-.skills-wrapper img {
-padding: 1.25rem;
+.skill-header {
+margin-bottom: 2.5rem;
 }
 
 .icon-ansible {
@@ -174,7 +211,7 @@ button:focus {
 }
 .timelines h2 {
 	text-align: center;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	font-weight: 600;
 	margin-bottom: 40px;
 }
@@ -204,10 +241,12 @@ button:focus {
 }
 .timeline-text h6 {
 	font-weight: 900;
+    color: #ffffff;
 	display: inline-block;
 	font-size: 1rem;
 }
 .timeline-text span {
+    color: #c7c7c7;
 	display: block;
 	width: 100%;
 }
@@ -272,3 +311,15 @@ button:focus {
 		top: 32px;
 	}
 }
+
+/* Scrolling animation styling */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

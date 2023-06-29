@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ysabeau+SC:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 
+    <!-- FullPage.JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
 
@@ -68,15 +72,15 @@
     </section>
 
     <!-- about section-->
-    <section id="about">
+    <section id="about" class="bgimage-section2 reveal">
       <div class="container mt-4 pt-4">
-        <h1 class="text-center">Tentang Saya</h1>
-        <div class="row mt-4">
+        <h1 class="text-center text-light skill-header">Tentang Saya</h1>
+        <div class="row">
           <!-- <div class="col-lg-4">
             <img src="images/.jpg" class="imageAboutPage" alt="">
           </div> -->
-      <div class="col-lg-12">
-        <p style="text-align: justify">
+      <div class="col-lg-12 reveal">
+        <p style="text-align: justify" class="text-light">
           Saya lulusan Teknik Elektro dari Universitas Tidar Magelang dengan minat yang kuat dalam jaringan komputer, komputasi awan, dan otomasi jaringan. Saya memiliki latar belakang di bidang teknologi informasi dan pondasi yang kuat dalam prinsip-prinsip dasar jaringan dan protokol. Saya juga mempelajari konsep-konsep terbaik dan praktik dalam mengelola infrastruktur cloud melalui pengalaman dengan AWS dan Alibaba Cloud. Saya selalu bersemangat untuk belajar dan mengikuti perkembangan terbaru di industri teknologi.
         </p>
 
@@ -112,52 +116,59 @@
       </div>
     </section>
 
-    <section class="skills" id="skills">
-     <h1 class="skill-header text-center">Kemampuan Saya</h2>
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/aws.svg"
-            alt="aws"
-            loading="lazy"
-            class="icon-aws icon-card"
-          />
-          <img
-            src="assets/icons/ansible.svg"
-            alt="ansible"
-            loading="lazy"
-            class="icon-ansible icon-card"
-          />
-          <img
-            src="assets/icons/cisco.svg"
-            alt="cisco"
-            loading="lazy"
-            class="icon-cisco icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/html5.svg"
-            alt="html"
-            loading="lazy"
-            class="icon-html icon-card"
-          />
-          <img
-            src="assets/icons/laravel.svg"
-            alt="laravel"
-            loading="lazy"
-            class="icon-laravel icon-card"
-          />
-          <img
-            src="assets/icons/php.svg"
-            alt="php"
-            loading="lazy"
-            class="icon-php icon-card"
-          />
+    <section class="skills reveal" id="skills">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col">
+            <h1 class="skill-header text-center">Kemampuan Saya</h1>
+            <div class="skills-wrapper">
+              <div class="first-set animate__animated animate__pulse reveal">
+                <img
+                  src="assets/icons/aws.svg"
+                  alt="aws"
+                  loading="lazy"
+                  class="icon-aws icon-card"
+                />
+                <img
+                  src="assets/icons/ansible.svg"
+                  alt="ansible"
+                  loading="lazy"
+                  class="icon-ansible icon-card"
+                />
+                <img
+                  src="assets/icons/cisco.svg"
+                  alt="cisco"
+                  loading="lazy"
+                  class="icon-cisco icon-card"
+                />
+              </div>
+    
+              <div class="second-set animate__animated animate__pulse">
+                <img
+                  src="assets/icons/html5.svg"
+                  alt="html"
+                  loading="lazy"
+                  class="icon-html icon-card"
+                />
+                <img
+                  src="assets/icons/laravel.svg"
+                  alt="laravel"
+                  loading="lazy"
+                  class="icon-laravel icon-card"
+                />
+                <img
+                  src="assets/icons/php.svg"
+                  alt="php"
+                  loading="lazy"
+                  class="icon-php icon-card"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    
 
     <footer id="contact" class="text-light bg-dark text-center py-4">
       <div class="container">
